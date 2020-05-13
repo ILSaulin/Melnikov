@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Пример верстки сайта плавающими элементами</title>
+<style>
+	table{
+		width: 70%;
+		margin: 0 auto;
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
+	caption{
+		caption-side: bottom;
+		font-size: 16pt;
+	}
+	tr,th{
+		/* width: 20%; */
+		height: 30px;
+		text-align: center;
+	}
+
+	 td{
+		border-top:1px solid black ;
+		background-color: lightgoldenrodyellow;
+	}
+	tbody tr:hover{
+		background-color: lawngreen;
+	}
+	/* thead th:first-child, tfoot td:first-child{ */
+		/* border: 1px solid  transparent; */
+	/* } */
+	th:first-child{
+		border-top-left-radius: 20px;
+	}
+	tfoot td:first-child{
+		border-bottom-left-radius:20px ;
+	}
+	
+	th:last-child{
+		border-top-right-radius:20px ;
+	}
+	tfoot td:last-child{
+		border-bottom-right-radius:20px ;
+	}
+	thead,tfoot{
+		background-color: darkgray;
+	}
+	tbody tr:nth-child(4){
+		border-top-right-radius:20px ;
+	} 
+
+</style>
+</head>
+	<body>
+		<table>
+			<caption>Практическое задание 32</caption>
+			<thead>
+				<tr>
+					<th>1</th><th>2</th><th>3</th><th>4</th><th>5</th>
+				</tr>
+			</thead>	
+			<tfoot>
+				<td>1</td><td>2</td><td>3</td><td>4</td><td>5</td>
+			</tfoot>
+			<tbody>
+				<tr>
+					<td>1</td><td>2</td><td>3</td><td>4</td><td>5</td>
+				</tr>
+				<tr>
+					<td>1</td><td>2</td><td>3</td><td>4</td><td>5</td>
+				</tr>				<tr>
+					<td>1</td><td>2</td><td>3</td><td>4</td><td>5</td>
+				</tr>				<tr>
+					<td>1</td><td>2</td><td>3</td><td>4</td><td>5</td>
+				</tr>				<tr>
+					<td>1</td><td>2</td><td>3</td><td>4</td><td>5</td>
+				</tr>				<tr>
+					<td>1</td><td>2</td><td>3</td><td>4</td><td>5</td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>
